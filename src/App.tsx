@@ -66,8 +66,8 @@ export default function App() {
   return (
     <Body $theme={theme}>
       <header>
-            <Title>Random Quote Machine</Title>
-        </header>
+          <Title>Random Quote Machine</Title>
+      </header>
       <Main quote={quote} $theme={theme} changeTheme={selectRandomTheme} getQuote={selectRandomQuote} error={error} />
     </Body>
   )

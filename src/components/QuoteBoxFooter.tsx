@@ -19,7 +19,7 @@ const Footer = styled.footer`
 const Button = styled.button<{$theme: ThemeProps}>`
     background-color: rgba(0, 0, 0, 0);
     color: ${({$theme}) => $theme.background};
-    border: 1px solid ${({$theme}) => $theme.background };
+    border: 1px solid ${({$theme}) => $theme.background};
     transition: background-color 0.5s linear, color 0.5s linear;
     padding: 10px;
     height: fit-content;
