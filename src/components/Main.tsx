@@ -9,6 +9,10 @@ const StyledMain = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (width < 1000px) {
+        height: 70%;
+    }
 `
 
 const QuoteBox = styled.div<{$theme: ThemeProps}>`
@@ -28,7 +32,11 @@ const QuoteBox = styled.div<{$theme: ThemeProps}>`
     align-items: center;
     padding-inline: 10px;
 
-    @media screen and (width < 600px) {
+    @media screen and (width < 1000px) {
+        width: 80%;
+    }
+
+    @media screen and (width < 800px) {
         width: 100%;
         padding-inline: 0;
     }
@@ -48,8 +56,30 @@ const BlockQuote = styled.blockquote<{$theme: ThemeProps}>`
         font-size: 1.2rem;
     }
 
+    @media screen and (width < 1000px) {
+        #text {
+            font-size: 1.3rem;
+        }
+
+        #author {
+            font-size: 1rem;
+        }
+    }
+
     @media screen and (width < 600px) {
         width: 90%;
+    }
+
+    @media screen and (height < 400px) {
+        margin-bottom: 0;
+
+        #text {
+            font-size: 1.2rem;
+        }
+
+        #author {
+            font-size: 0.9rem;
+        }
     }
 
 `

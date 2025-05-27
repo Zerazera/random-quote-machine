@@ -23,6 +23,11 @@ const Title = styled.h1`
     margin-top: 0;
     padding-top: 0.67em;
     font-size: 2rem;
+
+    @media screen and (width < 1000px) {
+      padding-top: 0.33em;
+      margin-bottom: 1em;
+    }
 `
 
 export default function App() {
